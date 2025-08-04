@@ -106,10 +106,15 @@ This problem setting attemtps to mirror real-world fraud detection systems.
 
 ### Best practice checks:
 ✅ **Unit Tests** (1 point) - Comprehensive unit tests for model and API
+
 ✅ **Integration Tests** (1 point) - Full API integration testing
+
 ✅ **Linter and Code Formatter** (1 point) - Black, Flake8, isort, MyPy
+
 ✅ **Makefile** (1 point) - Comprehensive development and deployment commands
+
 ✅ **Pre-commit Hooks** (1 point) - Automated code quality checks
+
 ✅ **CI/CD Pipeline** (2 points) - GitHub Actions with multi-stage deployment
 
 ## 🏗️ Architecture
