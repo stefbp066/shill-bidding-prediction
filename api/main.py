@@ -71,7 +71,8 @@ def load_model():
 
         # Check if it's a tuple and extract the model
         if isinstance(loaded_model, tuple):
-            # Handle different tuple formats: (model, conda_env) or (model, conda_env, code_paths)
+            # Handle different tuple formats: (model, conda_env) or 
+            # (model, conda_env, code_paths)
             if len(loaded_model) >= 2:
                 # The actual model is typically at index 1 in this format
                 model = loaded_model[1]  # Extract the actual model

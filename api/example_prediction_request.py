@@ -3,7 +3,8 @@ import requests
 # API endpoint
 url = "http://localhost:8000/predict"
 
-# Test data to send to the API. Note that auction_id is a string, while the others are integers.
+# Test data to send to the API. Note that auction_id is a string, while the others
+# are integers.
 test_data = {
     "auction_id": "732",
     "bidder_tendency": 0.5,
