@@ -11,7 +11,8 @@ A comprehensive ML model monitoring system for detecting shill bidding in auctio
 **Access the deployed application:**
 - **API Endpoint**: http://13.49.246.221:8000
 - **API Documentation**: http://13.49.246.221:8000/docs
-- **Grafana Dashboard**: http://13.49.246.221:3000 (user: admin/pass: admin5)
+- **Grafana Dashboard**: http://13.49.246.221:3000
+<img width="1438" height="639" alt="image" src="https://github.com/user-attachments/assets/cd549788-2bb8-4b77-bd3e-9232abebe67b" />
 - **Prometheus**: http://13.49.246.221:9090
 
 Test a prediction:
@@ -65,8 +66,45 @@ This problem setting attemtps to mirror real-world fraud detection systems.
 - **Code Quality**: Linting, formatting, and security scanning
 - **Best Practices**: Pre-commit hooks, Makefile, and comprehensive documentation
 
-## 📋 Grading Requirements Met
+## 📋 Grading Requirements
+### ☁️ Cloud & Infrastructure
+- Remote storage (e.g., S3) used for storing artifacts
+- Infrastructure-as-code via **Terraform**
+- Project is cloud-ready and can be deployed end-to-end remotely
 
+### 🔬 Experiment Tracking
+- **MLflow** is used to:
+  - Log training runs, parameters, and metrics
+  - Track artifacts and models
+  - Register models for versioning and reproducibility
+
+### 🧪 Model Registry
+- Registered models are version-controlled in **MLflow Model Registry**
+- Staged transitions (e.g., `Staging`, `Production`) supported for testing and deployment flows
+
+### ⚙️ Workflow Orchestration
+- [![Prefect](https://img.shields.io/badge/Orchestrator-Prefect-4B4FEB?logo=prefect&logoColor=white)](https://www.prefect.io/) handles the complete pipeline:
+  - Data ingestion
+  - Preprocessing
+  - Training
+  - Evaluation
+  - Model registration
+- Modular task structure for easy maintenance and expansion
+
+### 📦 Deployment
+- Model is **containerized with Docker**
+- Includes a standalone inference script and API-ready setup
+- Image can be deployed to cloud or on-prem environments
+
+### 📈 Monitoring
+- Model performance metrics are calculated and logged post-deployment
+- Monitoring in place, though **retraining is not yet triggered automatically** from alerts or thresholds
+
+### 🔁 Reproducibility
+- All dependencies are version-pinned
+- Environment and workflow reproducible locally or on the cloud
+
+### Best practice checks:
 ✅ **Unit Tests** (1 point) - Comprehensive unit tests for model and API
 ✅ **Integration Tests** (1 point) - Full API integration testing
 ✅ **Linter and Code Formatter** (1 point) - Black, Flake8, isort, MyPy
@@ -573,7 +611,6 @@ environment = "dev"
 
 - ✅ Infrastructure deployed
 - ✅ CI/CD pipeline active
-- ✅ Tests passing
 - ✅ Monitoring operational
 - ✅ Documentation complete
 
