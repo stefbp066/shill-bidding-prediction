@@ -3,6 +3,7 @@
 ![Docker](https://img.shields.io/badge/Docker-✓-blue.svg)
 ![Terraform](https://img.shields.io/badge/Terraform-✓-purple.svg)
 ![AWS](https://img.shields.io/badge/AWS-EC2-orange.svg)
+[![Prefect](https://img.shields.io/badge/Orchestrator-Prefect-4B4FEB?logo=prefect&logoColor=white)](https://www.prefect.io/)
 
 # Shill Bidding Model Monitoring System
 
@@ -83,7 +84,7 @@ This problem setting attemtps to mirror real-world fraud detection systems.
 - Staged transitions (e.g., `Staging`, `Production`) supported for testing and deployment flows
 
 ### ⚙️ Workflow Orchestration
-- [![Prefect](https://img.shields.io/badge/Orchestrator-Prefect-4B4FEB?logo=prefect&logoColor=white)](https://www.prefect.io/) handles the complete pipeline:
+- [![Prefect]](https://www.prefect.io/) handles the complete pipeline:
   - Data ingestion
   - Preprocessing
   - Training
